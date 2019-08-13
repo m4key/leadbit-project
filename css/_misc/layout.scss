@@ -24,7 +24,6 @@ body{
   font-size:16px;
   line-height: 1.42;
   position: relative;
-  overflow: hidden;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -55,7 +54,6 @@ p{
   width: 100%;
   //max-width:960px;
   height: 100%;
-  overflow: hidden; 
 }
 
 .content{
@@ -89,5 +87,4 @@ p{
   display: flex;
   flex-direction: column;
   height: 100%;
-  justify-content: center;
 }

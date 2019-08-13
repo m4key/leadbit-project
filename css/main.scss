@@ -13,6 +13,7 @@ $phones-small: 320px;
 @import "_misc/layout";
 
 //blocks
+//section primary
 @import "blocks/primary.scss";
 @import "blocks/header.scss";
 @import "blocks/logo.scss";
@@ -20,3 +21,7 @@ $phones-small: 320px;
 @import "blocks/social.scss";
 @import "blocks/language.scss";
 @import "blocks/info.scss";
+
+//section about
+@import "blocks/about.scss";
+@import "blocks/quality.scss";

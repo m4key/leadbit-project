@@ -1,0 +1,47 @@
+.about{
+  min-height: 791px;
+  background: url("../images/bg_pattern.png") top center;
+  background-repeat: no-repeat;
+
+}
+
+.about__container{
+  height: 987px;
+  align-items: center;
+  position: relative;
+  &::before{
+    content: "";
+    width: 6px;
+    height: 125px;
+    background-color: #00bfd2;
+    position: absolute;
+    left: 0;
+    top: 20%;
+  }
+  &::after{
+    content: "";
+    width: 6px;
+    height: 125px;
+    background-color: #00bfd2;
+    position: absolute;
+    right: 0;
+    top: 20%;
+  }
+}
+
+.about__title{
+  font-size: 60px;
+  @include myriad(bold);
+  text-transform: uppercase;
+  color: #045c8d;
+  text-align: center;
+  margin-top: 189px;
+}
+.about__text{
+  font-size: 24px;
+  @include myriad(normal);
+  color: #010101;
+  text-align: center;
+  width: 682px;
+  height: 77px;
+}
