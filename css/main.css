@@ -1,24 +1,24 @@
 @font-face {
   font-family: 'myriad-pro';
-  src: url("../fonts/myriad-pro.woff") format("woff");
+  src: url("../fonts/myriad-pro-bold.woff") format("woff");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'myriad-pro';
-  src: url("../fonts/myriad-pro.woff") format("woff");
+  src: url("../fonts/myriad-pro-regular.woff") format("woff");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: 'myriad-pro';
-  src: url("../fonts/myriad-pro.woff") format("woff");
+  src: url("../fonts/myriad-pro-regular.woff") format("woff");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: 'myriad-pro';
-  src: url("../fonts/myriad-pro.woff") format("woff");
+  src: url("../fonts/myriad-pro-regular.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -41,8 +41,7 @@ body {
 body {
   font-size: 16px;
   line-height: 1.42;
-  position: relative;
-  overflow: hidden; }
+  position: relative; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -65,8 +64,7 @@ p {
 .wrapper {
   position: relative;
   width: 100%;
-  height: 100%;
-  overflow: hidden; }
+  height: 100%; }
 
 .content {
   height: 100%;
@@ -99,10 +97,7 @@ p {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  height: 100%;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
+  height: 100%; }
 
 .primary {
   min-height: 951px;
@@ -227,3 +222,77 @@ p {
   background-color: #fa272a;
   border: none;
   margin-top: 117px; }
+
+.about {
+  min-height: 791px;
+  background: url("../images/bg_pattern.png") top center;
+  background-repeat: no-repeat; }
+
+.about__container {
+  height: 987px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative; }
+  .about__container::before {
+    content: "";
+    width: 6px;
+    height: 125px;
+    background-color: #00bfd2;
+    position: absolute;
+    left: 0;
+    top: 20%; }
+  .about__container::after {
+    content: "";
+    width: 6px;
+    height: 125px;
+    background-color: #00bfd2;
+    position: absolute;
+    right: 0;
+    top: 20%; }
+
+.about__title {
+  font-size: 60px;
+  font-family: 'myriad-pro', Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #045c8d;
+  text-align: center;
+  margin-top: 189px; }
+
+.about__text {
+  font-size: 24px;
+  font-family: 'myriad-pro', Helvetica, sans-serif;
+  color: #010101;
+  text-align: center;
+  width: 682px;
+  height: 77px; }
+
+.quality__list {
+  margin-top: 97px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  text-align: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.quality__item {
+  width: 300px;
+  padding-top: 50px; }
+
+.quality__desc {
+  font-size: 20px;
+  font-family: 'myriad-pro', Helvetica, sans-serif;
+  font-weight: bold;
+  color: #142831;
+  text-transform: uppercase;
+  margin-top: 23px; }
+
+.quality__desc-text {
+  font-size: 18px;
+  font-weight: normal;
+  text-transform: none; }
