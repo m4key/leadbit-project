@@ -1,0 +1,15 @@
+@mixin myriad($style:light){
+  font-family: 'myriad-pro', Helvetica, sans-serif;
+
+  @if $style==light{
+    font-weight: 300;
+  }
+
+  @if $style==medium{
+    font-weight: normal;
+  }
+
+  @if $style==bold{
+    font-weight: bold;
+  }
+}

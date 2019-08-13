@@ -1,0 +1,20 @@
+.menu{
+  margin-left: 121px;
+  display: flex;
+  align-items: center;
+}
+.menu__list{
+  display: flex;
+
+}
+.menu__item{
+  &:first-child{
+    margin-left: 0;
+  }
+  margin-left: 34px;
+}
+.menu__link{
+  text-decoration: none;
+  color:#fff;
+  @include myriad(medium);
+}
