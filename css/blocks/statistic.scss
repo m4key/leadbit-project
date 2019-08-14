@@ -1,0 +1,103 @@
+.statistic{
+  background-image:  linear-gradient(to bottom, rgba(26, 159, 214, 0.7), rgba(20, 49, 62, 0.7) 60%);
+  min-height: 790px;
+  width: 100%;
+  position: static;
+}
+.statistic__container{
+  height: 790px;
+}
+.statistic__chips{
+  position: absolute;
+  z-index: 15;
+}
+.statistic__chips-img{
+  position: absolute;
+  &-one{
+    top: -40px;
+    right: 146px;
+  }
+  &-two{
+    top: 262px;
+    right: 139px;
+  }
+  &-three{
+    top: 513px;
+    right: 264px;
+  }
+  &-four{
+    top: 495px;
+    right: 30px;
+  }
+  &-five{
+    top: 648px;
+    left: 13px;
+  }
+  &-six{
+    top: 766px;
+    right: 210px;
+  }
+  &-seven{
+    top: 115px;
+    left: 288px;
+  }
+  &-eight{
+    top: 92px;
+    left: 1022px;
+  }
+  &-nine{
+    top: 73px;
+    left: 1355px;
+  }
+  &-ten{
+    top: 396px;
+    left: 1336px;
+  }
+  &-eleven{
+    top: 512px;
+    left: 1097px;
+  }
+  &-twelve{
+    top: 678px;
+    left: 897px;
+  }
+  &-thirteen{
+    top: 754px;
+    left: 1233px;
+  }
+}
+
+.statistic__list{
+  z-index: 15;
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
+  margin-top: 250px;
+}
+.statistic__item{
+  width: 360px;
+  height: 492px;
+  &--border{
+    border: solid 4px #00bfd2;
+  }
+}
+.statistic__value{
+  font-size: 68px;
+  @include myriad(bold);
+  color: #00def9;
+  padding-top: 95px;
+  &--active{
+    padding-top: 29px;
+  }
+}
+.statistic__text{
+  @include myriad(bold);
+  font-size: 20px;
+  color:#fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-top: 20px;
+}
+.statistic__button{
+  margin-top: 130px;
+}
