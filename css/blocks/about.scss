@@ -1,14 +1,28 @@
 .about{
-  min-height: 791px;
-  background: url("../images/bg_pattern.png") top center;
-  background-repeat: no-repeat;
-
+  min-height: 1580px;
+  position: relative;
+  &::after{
+    content: "";
+    background-image: linear-gradient(to top, #142831, #14313e 98%);
+    height: 789px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+  }
 }
 
 .about__container{
   height: 987px;
   align-items: center;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+  background: url("../images/bg_pattern.png") top center;
+  background-repeat: no-repeat;
+  background-color: #fff;
   &::before{
     content: "";
     width: 6px;
@@ -35,7 +49,7 @@
   text-transform: uppercase;
   color: #045c8d;
   text-align: center;
-  margin-top: 189px;
+  margin-top: 175px;
 }
 .about__text{
   font-size: 24px;
@@ -43,5 +57,4 @@
   color: #010101;
   text-align: center;
   width: 682px;
-  height: 77px;
 }
