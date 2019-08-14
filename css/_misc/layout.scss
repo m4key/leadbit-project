@@ -94,3 +94,9 @@ p{
   background-color: #fa272a;
   border: none;
 }
+.section-title{
+  @include myriad(bold);
+  text-transform: uppercase;
+  color: #045c8d;
+  text-align: center;
+}

@@ -1,0 +1,52 @@
+.slider{
+  
+  position: relative;
+}
+
+.slider__title{
+  font-size: 50px;
+  @include myriad(bold);
+  color: #045c8d;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 183px;
+}
+
+.slider__content-list{
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+}
+.slider__content-item{
+  position: relative;
+  width: 33%;
+  transition: transform 0.6s ease;
+  margin-left: 87px;
+  margin-top: 100px;
+}
+.slider__button{
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: block;
+  border: 5px solid #00bfd2;
+  border-radius: 3px;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  background: transparent;
+  z-index: 20;
+  &-prev{
+    left: 0;
+    top: 80%;
+    transform: rotate(45deg);
+  }
+  &-next{
+    right: 0;
+    top: 80%;
+    transform: rotate(225deg);
+  }
+}
