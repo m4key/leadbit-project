@@ -3,7 +3,8 @@ let options = {
   buttonClose: '.popup__close',
   background: '.popup',
   menu: '.popup__content',
-  socialLinks: 'header__social-link'
+  socialLinks: 'header__social-link',
+  wrapper: '.wrapper'
 }
 
 let menu = (function(options) {
@@ -11,6 +12,7 @@ let menu = (function(options) {
   let modalMenu = document.querySelector(options.menu);
   let closeButton = document.querySelector(options.buttonClose);
   let body = document.querySelector('body');
+  let wrapper = document.querySelector(options.wrapper);
   let bg = document.querySelector(options.background);
   let links = document.getElementById(options.socialLinks);
   console.log(links)
@@ -19,12 +21,14 @@ let menu = (function(options) {
     bg.style.display = 'block';
     modalMenu.style.transform = 'translateX(0)';
     body.classList.add('body--active-modal');
+    wrapper.classList.add('wrapper--active-modal');
   }
 
   let _closeMenu = function(e) {
     bg.style.display = 'none';
     modalMenu.style.transform = 'translateX(100%)';
     body.classList.remove('body--active-modal');
+    wrapper.classList.remove('wrapper--active-modal');
   }
 
   let addListeners = function() {

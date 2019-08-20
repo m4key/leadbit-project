@@ -1,6 +1,6 @@
 .slider{
-  
   position: relative;
+  overflow: hidden;
 }
 
 .slider__title{
@@ -20,22 +20,34 @@
 
 .slider__content-list{
   width: 100%;
-  overflow: hidden;
   position: relative;
   display: flex;
 }
 .slider__content-item{
   position: relative;
-  width: 33%;
   transition: transform 0.6s ease;
-  margin-left: rem(87px);
+  flex: 0 0 33%;
+  max-width: 33%;
   margin-top: rem(100px);
+  display: flex;
+  justify-content: center;
   @include laptops{
     margin-left: rem(39px);
   }
   @include tablets{
     margin-left: rem(87px);
     margin-top: rem(68px);
+  }
+}
+.slider__content-img{
+  max-width: 100%;
+  max-height: 100%;
+  width: 85%;
+  object-fit: cover;
+  filter: grayscale(100%);
+  &--active{
+    width: 100%;
+    filter: grayscale(0);
   }
 }
 .slider__button{

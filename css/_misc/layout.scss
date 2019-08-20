@@ -58,6 +58,9 @@ p{
   //max-width:960px;
   height: 100%;
   overflow-x: hidden;
+  &--active-modal{
+    overflow: hidden;
+  }
 }
 
 .section{
