@@ -1,0 +1,83 @@
+.slider{
+  position: relative;
+  overflow: hidden;
+}
+
+.slider__title{
+  font-size: rem(50px);
+  @include myriad(bold);
+  color: #045c8d;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: rem(183px);
+  @include tablets{    
+    margin-top: rem(119px);
+  }
+  @include phones-small{
+    margin-top: rem(55px);
+  }
+}
+
+.slider__content-list{
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+.slider__content-item{
+  position: relative;
+  transition: transform 0.6s ease;
+  flex: 0 0 33%;
+  max-width: 33%;
+  margin-top: rem(100px);
+  display: flex;
+  justify-content: center;
+  @include laptops{
+    margin-left: rem(39px);
+  }
+  @include tablets{
+    margin-left: rem(87px);
+    margin-top: rem(68px);
+  }
+}
+.slider__content-img{
+  max-width: 100%;
+  max-height: 100%;
+  width: 85%;
+  object-fit: cover;
+  filter: grayscale(100%);
+  &--active{
+    width: 100%;
+    filter: grayscale(0);
+  }
+}
+.slider__button{
+  width: rem(34px);
+  height: rem(34px);
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: block;
+  border: 5px solid #00bfd2;
+  border-radius: 3px;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  background: transparent;
+  z-index: 20;
+  &-prev{
+    left: 0;
+    top: 80%;
+    transform: rotate(45deg);
+    @include tablets{
+      top: 75%;
+    }
+  }
+  &-next{
+    right: 0;
+    top: 80%;
+    transform: rotate(225deg);
+    @include tablets{
+      top: 75%;
+    }
+  }
+}

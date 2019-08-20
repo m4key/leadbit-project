@@ -1,24 +1,40 @@
 .quality__list{
-  margin-top: 97px;
+  margin-top: rem(45px);
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  justify-content: space-between;
+  justify-content: center;
+  @include phones-small{
+    margin-top: 0;
+  }
 }
 .quality__item{
-  width: 300px;
-  padding-top: 50px;
+  width: rem(300px);
+  padding-top: rem(50px);
+  @include tablets{
+    padding-top: rem(18px);
+  }
+  @include phones{
+    width: rem(236px);
+  }
+  @include phones-small{
+    width: rem(172px);
+  }
 }
 
 .quality__desc{
-  font-size: 20px;
+  font-size: rem(20px);
   @include myriad(bold);
   color: #142831;
   text-transform: uppercase;
-  margin-top: 23px;
+  margin-top: rem(23px);
+  @include phones{
+    margin-top: rem(7px);
+    font-size: rem(18px);
+  }
 }
 .quality__desc-text{
-  font-size: 18px;
+  font-size: rem(18px);
   font-weight: normal;
   text-transform: none;
 }

@@ -1,12 +1,20 @@
-.info__button{
-  @include myriad();
-  font-size: 24px;
-  font-weight: 600;
+.info{
+  margin-top: rem(207px);
+  @include phones{
+    margin-top: rem(111px);
+  }
+}
+.info__title {
   text-transform: uppercase;
-  color:#fff;
-  width: 300px;
-  height: 55px;
-  background-color: #fa272a;
-  border: none;
-  margin-top: 117px;
+  font-size: rem(60px);
+  @include myriad(bold);
+  
+}
+.info__subtitle{
+  @include myriad(medium);
+  font-size: rem(30px);
+  margin-top: rem(29px);
+}
+.info__button{
+  margin-top: rem(117px);
 }

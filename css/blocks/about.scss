@@ -1,47 +1,92 @@
 .about{
-  min-height: 791px;
-  background: url("../images/bg_pattern.png") top center;
-  background-repeat: no-repeat;
-
+  min-height: rem(790px);
 }
 
 .about__container{
-  height: 987px;
   align-items: center;
+  background-color: #fff;
+  height: rem(987px);
+  position: absolute;
+  display: flex;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  @include tablets{
+    height: rem(1083px);
+  }
+  @include phones-small{
+    height: rem(1163px);
+  }
+}
+
+.about__content{
   position: relative;
+  background: url("../images/bg_pattern.png") top center;
+  background-repeat: no-repeat;
+  align-items: center;
+  @include phones-small{
+    background: none;
+  }
   &::before{
     content: "";
-    width: 6px;
-    height: 125px;
+    width: rem(6px);
+    height: rem(125px);
     background-color: #00bfd2;
     position: absolute;
     left: 0;
     top: 20%;
+    @include tablets{
+      top: 15%;
+    }
+    @include phones-small{
+      top: 5%;
+    }
   }
   &::after{
     content: "";
-    width: 6px;
-    height: 125px;
+    width: rem(6px);
+    height: rem(125px);
     background-color: #00bfd2;
     position: absolute;
     right: 0;
     top: 20%;
+    @include tablets{
+      top: 15%;
+    }
+    @include phones-small{
+      top: 5%;
+    }
   }
 }
-
 .about__title{
-  font-size: 60px;
+  font-size: rem(60px);
   @include myriad(bold);
   text-transform: uppercase;
   color: #045c8d;
   text-align: center;
-  margin-top: 189px;
+  margin-top: rem(175px);
+  @include phones{
+    margin-top: rem(143px);
+    font-size: rem(50px);
+  }
+  @include phones-small{
+    margin-top: rem(47px);
+  }
 }
 .about__text{
-  font-size: 24px;
+  font-size: rem(24px);
   @include myriad(normal);
   color: #010101;
   text-align: center;
-  width: 682px;
-  height: 77px;
+  width: rem(682px);
+  @include tablets{
+    font-size: rem(20px);
+  }
+  @include phones{
+    font-size: rem(18px);
+    width: rem(458px);
+  }
+  @include phones-small{
+    width: rem(346px);
+  }
 }

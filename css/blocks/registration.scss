@@ -1,0 +1,84 @@
+.registration{
+  height: rem(720px);
+  @include phones-small{
+    height: rem(1072px);
+  }
+}
+
+.registration__container{
+  background-color: #e7e9ea;
+  text-align: center;
+}
+.registration__content{
+  position: relative;
+  &::before{
+    content: "";
+    width: rem(6px);
+    height: rem(125px);
+    background-color: #00bfd2;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    @include phones-small{
+      top: 37%;
+      height: rem(509px);
+    }
+  }
+  &::after{
+    content: "";
+    width: rem(6px);
+    height: rem(125px);
+    background-color: #00bfd2;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    @include phones-small{
+      top: 37%;
+      height: rem(509px);
+    }
+  }
+}
+.registration__title{
+  font-size: rem(50px);
+  margin-top: rem(87px);
+  @include phones{
+    font-size: rem(40px);
+    margin-top: rem(55px);
+  }
+  @include phones-small{
+    margin-top: rem(39px);
+  }
+}
+.registration__subtitle{
+  font-size: rem(25px);
+  margin-top: rem(40px);
+  color: #010101;
+  @include phones{
+    font-size: 20px;
+  }
+}
+.registration__list{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: rem(60px);
+  @include phones-small{
+    margin-top: rem(28px);
+    flex-direction: column;
+  }
+}
+
+.registration__text{
+  font-size: rem(20px);
+  @include myriad(bold);
+  text-transform: uppercase;
+  color: #142831;
+  letter-spacing: 2px;
+  @include phones{
+    font-size: rem(16px);
+  }
+}
+.registration__button{
+  margin: 0 auto;
+  margin-top: rem(69px);
+}
