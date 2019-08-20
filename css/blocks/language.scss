@@ -1,7 +1,12 @@
 .language{
-  margin-left: 60px;
-  width: 32px;
-  height: 21px;
+  margin-left: rem(60px);
+  width: rem(32px);
+  height: rem(21px);
+  display: flex;
+  flex-shrink: 0;
+  @include laptops{
+    margin-left: rem(12px);
+  }
 }
 .language__pic{
   width: 100%;

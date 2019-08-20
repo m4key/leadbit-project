@@ -1,11 +1,14 @@
 .footer{
-  height: 543px;
+  height: rem(543px);
   width: 100%;
   background-image: linear-gradient(to top, #142831, #14313e 98%);
 }
 
 .footer__contacts{
-  margin-top: 119px;
+  margin-top: rem(119px);
+  @include phones{
+    margin-top: rem(55px);
+  }
 }
 .footer__communication-list{
   display: flex;
@@ -13,8 +16,8 @@
   justify-content: space-around;
 }
 .footer__communication-link{
-  width: 41px;
-  height: 41px;
+  width: rem(41px);
+  height: rem(41px);
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -26,21 +29,26 @@
   object-fit: cover;
 }
 .footer__communication-text{
-  margin-top: 20px;
-  font-size: 18px;
+  margin-top: rem(20px);
+  font-size: rem(18px);
   @include myriad(600);
   color: #01b7ce;
 }
 
 .footer__info{
-  margin-top: 103px;
+  margin-top: rem(103px);
   display: flex;
   justify-content: space-between;
   text-align: left;
+  @include phones{
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 .footer__logo{
-  width: 174px;
-  height: 20px;
+  width: rem(174px);
+  height: rem(20px);
 }
 .footer__logo-img{
   width: 100%;
@@ -48,31 +56,48 @@
   object-fit: cover;
 }
 .footer__logo-text{
-  margin-top: 31px;
-  font-size: 14px;
+  margin-top: rem(31px);
+  font-size: rem(14px);
   @include myriad(600);
   line-height: 2.14;
   color: #456073;
   text-align: left;
+  @include phones{
+    margin-top: 0;
+    text-align: center;
+  }
+}
+.footer__adress{
+  @include phones{
+    margin-top: rem(70px);
+  }
 }
 .footer__adress-title{
-  font-size: 20px;
+  font-size: rem(20px);
   @include myriad(600);
   color:#fff;
   line-height: 2.1;
   letter-spacing: 2px;
 }
 .footer__adress-text{
-  margin-top: 31px;
-  font-size: 14px;
+  margin-top: rem(31px);
+  font-size: rem(14px);
   @include myriad(600);
   line-height: 2.14;
   color: #456073;
   text-align: left;
+  @include phones{
+    margin-top: 0;
+    text-align: center;
+  }
 }
 .footer__social{
   display: flex;
   align-items: flex-end;
+  @include phones{
+    align-items: center;
+    margin-top: rem(50px);
+  }
 }
 .footer__social-list{
   display: flex;
@@ -82,5 +107,5 @@
   &:first-child{
     margin-left: 0;
   }
-  margin-left: 17px;
+  margin-left: rem(17px);
 }

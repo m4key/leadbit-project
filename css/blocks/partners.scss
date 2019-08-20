@@ -1,8 +1,14 @@
 .partners{
-  height: 598px;
+  height: rem(598px);
+  @include tablets{
+    height: rem(486px);
+  }
 }
 .partners__container{
   background: url("../images/second_bg_pattern.png") center center;
   background-repeat: no-repeat;
-  background-position: 145px 50px;
+  background-position: rem(145px) rem(50px);
+  @include tablets{
+    background-position: rem(81px) rem(2px);
+  }
 }

@@ -1,5 +1,5 @@
 .registration{
-  height: 720px;
+  height: rem(720px);
 }
 
 .registration__container{
@@ -10,8 +10,8 @@
   position: relative;
   &::before{
     content: "";
-    width: 6px;
-    height: 125px;
+    width: rem(6px);
+    height: rem(125px);
     background-color: #00bfd2;
     position: absolute;
     left: 0;
@@ -19,8 +19,8 @@
   }
   &::after{
     content: "";
-    width: 6px;
-    height: 125px;
+    width: rem(6px);
+    height: rem(125px);
     background-color: #00bfd2;
     position: absolute;
     right: 0;
@@ -28,29 +28,39 @@
   }
 }
 .registration__title{
-  font-size: 50px;
-  margin-top: 87px;
+  font-size: rem(50px);
+  margin-top: rem(87px);
+  @include phones{
+    font-size: rem(40px);
+    margin-top: rem(55px);
+  }
 }
 .registration__subtitle{
-  font-size: 25px;
-  margin-top: 40px;
-  color: #010101
+  font-size: rem(25px);
+  margin-top: rem(40px);
+  color: #010101;
+  @include phones{
+    font-size: 20px;
+  }
 }
 .registration__list{
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-top: 60px;
+  margin-top: rem(60px);
 }
 
 .registration__text{
-  font-size: 20px;
+  font-size: rem(20px);
   @include myriad(bold);
   text-transform: uppercase;
   color: #142831;
   letter-spacing: 2px;
+  @include phones{
+    font-size: rem(16px);
+  }
 }
 .registration__button{
   margin: 0 auto;
-  margin-top: 69px;
+  margin-top: rem(69px);
 }

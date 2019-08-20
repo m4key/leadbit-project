@@ -4,12 +4,15 @@
 }
 
 .slider__title{
-  font-size: 50px;
+  font-size: rem(50px);
   @include myriad(bold);
   color: #045c8d;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 183px;
+  margin-top: rem(183px);
+  @include tablets{    
+    margin-top: rem(119px);
+  }
 }
 
 .slider__content-list{
@@ -22,12 +25,19 @@
   position: relative;
   width: 33%;
   transition: transform 0.6s ease;
-  margin-left: 87px;
-  margin-top: 100px;
+  margin-left: rem(87px);
+  margin-top: rem(100px);
+  @include laptops{
+    margin-left: rem(39px);
+  }
+  @include tablets{
+    margin-left: rem(87px);
+    margin-top: rem(68px);
+  }
 }
 .slider__button{
-  width: 34px;
-  height: 34px;
+  width: rem(34px);
+  height: rem(34px);
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -43,10 +53,16 @@
     left: 0;
     top: 80%;
     transform: rotate(45deg);
+    @include tablets{
+      top: 75%;
+    }
   }
   &-next{
     right: 0;
     top: 80%;
     transform: rotate(225deg);
+    @include tablets{
+      top: 75%;
+    }
   }
 }

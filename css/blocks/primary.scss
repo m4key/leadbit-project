@@ -1,5 +1,5 @@
 .primary {
-  min-height: 951px;
+  min-height: rem(951px);
   background: url("../images/video_delete.jpg") center center / cover no-repeat;
   color:#fff;
   position: relative;
@@ -13,20 +13,20 @@
     background-image: linear-gradient(90deg, #142831 0%, rgba(20, 40, 49, 0.5) 50%, rgba(20, 40, 49, 0));
   }
 }
+
 .primary__container{
   z-index: 50;
   position: relative;
-
 }
 .info__title {
   text-transform: uppercase;
-  font-size: 60px;
+  font-size: rem(60px);
   @include myriad(bold);
-  margin-top: 207px;
+  margin-top: rem(207px);
 }
 .info__subtitle{
   @include myriad(medium);
-  font-size: 30px;
-  margin-top: 29px;
+  font-size: rem(30px);
+  margin-top: rem(29px);
 
 }
