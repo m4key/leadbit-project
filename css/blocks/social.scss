@@ -10,14 +10,14 @@
 
 .header__social-list{
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 
 .header__social-item{
   margin-left: rem(20px);
   display: flex;
   flex-shrink: 0;
-  
+
   &:first-child{
     margin-left: 0;
   }

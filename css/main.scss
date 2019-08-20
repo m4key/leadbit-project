@@ -18,11 +18,13 @@ $phones-small: 320px;
 @import "blocks/primary.scss";
 @import "blocks/header.scss";
 @import "blocks/logo.scss";
-@import "blocks/nav.scss";
+@import "blocks/menu.scss";
 @import "blocks/social.scss";
 @import "blocks/language.scss";
 @import "blocks/arrow.scss";
 @import "blocks/info.scss";
+@import "blocks/hamburger-menu.scss";
+@import "blocks/popup.scss";
 
 //section about
 @import "blocks/about.scss";
