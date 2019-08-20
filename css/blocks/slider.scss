@@ -13,6 +13,9 @@
   @include tablets{    
     margin-top: rem(119px);
   }
+  @include phones-small{
+    margin-top: rem(55px);
+  }
 }
 
 .slider__content-list{

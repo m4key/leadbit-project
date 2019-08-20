@@ -4,6 +4,9 @@
   flex-wrap: wrap;
   text-align: center;
   justify-content: center;
+  @include phones-small{
+    margin-top: 0;
+  }
 }
 .quality__item{
   width: rem(300px);
@@ -13,6 +16,9 @@
   }
   @include phones{
     width: rem(236px);
+  }
+  @include phones-small{
+    width: rem(172px);
   }
 }
 

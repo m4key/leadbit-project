@@ -5,6 +5,9 @@
   @include laptops{
     margin-left: rem(25px);
   }
+  @include tablets{
+    display: none;
+  }
 }
 .menu__list{
   display: flex;

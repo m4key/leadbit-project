@@ -11,4 +11,7 @@
   @include tablets{
     background-position: rem(81px) rem(2px);
   }
+  @include phones-small{
+    background: none;
+  }
 }

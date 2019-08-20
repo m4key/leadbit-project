@@ -1,3 +1,20 @@
+.info{
+  margin-top: rem(207px);
+  @include phones{
+    margin-top: rem(111px);
+  }
+}
+.info__title {
+  text-transform: uppercase;
+  font-size: rem(60px);
+  @include myriad(bold);
+  
+}
+.info__subtitle{
+  @include myriad(medium);
+  font-size: rem(30px);
+  margin-top: rem(29px);
+}
 .info__button{
   margin-top: rem(117px);
 }

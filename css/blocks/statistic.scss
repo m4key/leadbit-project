@@ -9,6 +9,9 @@
   @include phones{
     height: rem(870px);
   }
+  @include phones-small{
+    height: rem(928px);
+  }
 }
 .statistic__chips{
   position: absolute;
@@ -111,6 +114,9 @@
   @include phones{
     margin-top: rem(298px);
     flex-direction: column;
+  }
+  @include phones-small{
+    margin-top: rem(358px);
   }
 }
 .statistic__item{

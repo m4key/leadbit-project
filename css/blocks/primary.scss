@@ -18,15 +18,3 @@
   z-index: 50;
   position: relative;
 }
-.info__title {
-  text-transform: uppercase;
-  font-size: rem(60px);
-  @include myriad(bold);
-  margin-top: rem(207px);
-}
-.info__subtitle{
-  @include myriad(medium);
-  font-size: rem(30px);
-  margin-top: rem(29px);
-
-}
